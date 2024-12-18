@@ -35,10 +35,8 @@ const Card = ({ data }) => {
 								: ""}
 						</>
 					)}
-
 				</div>
 
-				
 				<div className="text-gray-600 text-sm">
 					<span>
 						<span>{data?.division_info[3]?.name}</span>,
@@ -60,7 +58,7 @@ const formatPrice = (price) => {
 		return `${totalCrores.toFixed(1)} Cr`;
 	} else if (lakh > 0) {
 		// If only lakhs exist, display in lakhs
-		return `${lakh} Lakh`;
+		return `${lakh} lakhs`;
 	}
 
 	// Fallback if neither crores nor lakhs are available
